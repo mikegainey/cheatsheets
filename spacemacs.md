@@ -95,29 +95,29 @@
   
 ## Git
 
-SPC g b	open a magit blame
-SPC g B	quit magit blame
-SPC g c	commit changes
-SPC g C	checkout branches
-SPC g d	show diff prompt
-SPC g D	show diff against current head
-SPC g e	show ediff comparison
-SPC g E	show ediff against current head
-SPC g f	show fetch prompt
-SPC g F	show pull prompt
-SPC g H c	clear highlights
-SPC g H h	highlight regions by age of commits
-SPC g H t	highlight regions by last updated time
-SPC g i	git init a given directory
-SPC g I	open helm-gitignore
-SPC g l	open a magit log
-SPC g L	display the log for a file
-SPC g P	show push prompt
-SPC g s	open a magit status window
-SPC g S	stage current file
-SPC g m	display the last commit message of the current line
-SPC g t	launch the git time machine
-SPC g U	unstage current file
+- `SPC g b`	open a magit blame
+- `SPC g B`	quit magit blame
+- `SPC g c`	commit changes
+- `SPC g C`	checkout branches
+- `SPC g d`	show diff prompt
+- `SPC g D`	show diff against current head
+- `SPC g e`	show ediff comparison
+- `SPC g E`	show ediff against current head
+- `SPC g f`	show fetch prompt
+- `SPC g F`	show pull prompt
+- `SPC g H c`	clear highlights
+- `SPC g H h`	highlight regions by age of commits
+- `SPC g H t`	highlight regions by last updated time
+- `SPC g i`	git init a given directory
+- `SPC g I`	open helm-gitignore
+- `SPC g l`	open a magit log
+- `SPC g L`	display the log for a file
+- `SPC g P`	show push prompt
+- `SPC g s`	open a magit status window
+- `SPC g S`	stage current file
+- `SPC g m`	display the last commit message of the current line
+- `SPC g t`	launch the git time machine
+- `SPC g U`	unstage current file
 Highlight by age of commit or last update time is provided by smeargle.
 Git time machine is provided by git-timemachine.
 Git last commit message per line is provided by git-messenger.
