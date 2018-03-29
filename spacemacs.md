@@ -118,54 +118,57 @@
 - `SPC g m`	display the last commit message of the current line
 - `SPC g t`	launch the git time machine
 - `SPC g U`	unstage current file
+
 Highlight by age of commit or last update time is provided by smeargle.
 Git time machine is provided by git-timemachine.
 Git last commit message per line is provided by git-messenger.
-3.1 Magit
+
+### 3.1 Magit
 
 Spacemacs uses magit to manage Git repositories.
 
-To open a status buffer, type in a buffer of a Git repository: SPC g s
+To open a status buffer, type in a buffer of a Git repository: `SPC g s`
 
 Spacemacs uses evil-magit for key bindings in magit buffers (unless your editing style is set to emacs, in which case you get the default magit bindings), which are the standard magit key bindings with some minimal changes to make them comfortable for evil users.
 
 Here are the often used bindings inside a status buffer:
 
-Key Binding	Description
-/	evil-search
-$	open command output buffer
-c c	open a commit message buffer
-b b	checkout a branch
-b c	create a branch
-f f	fetch changes
-F (r) u	pull tracked branch and rebase
-gr	refresh
-j	goto next magit section
-C-j	next visual line
-k	goto previous magit section
-C-k	previous visual line
-l l	open log buffer
-n	next search occurrence
-N	previous search occurrence
-o	revert item at point
-P u	push to tracked branch
-P m	push to matching branch (e.g., upstream/develop to origin/develop)
-q	quit
-s	on a file or hunk in a diff: stage the file or hunk
-x	discard changes
-+	on a hunk: increase hunk size
--	on a hunk: decrease hunk size
-S	stage all
-TAB	on a file: expand/collapse diff
-u	on a staged file: unstage
-U	unstage all staged files
-v or V	select multiple lines
-z z	stash changes
-3.2 Staging lines
+### Key Binding	Description
+- `/`	evil-search
+- `$`	open command output buffer
+- `c c`	open a commit message buffer
+- `b b`	checkout a branch
+- `b c`	create a branch
+- `f f`	fetch changes
+- `F (r) u`	pull tracked branch and rebase
+- `gr`	refresh
+- `j`	goto next magit section
+- `C-j`	next visual line
+- `k`	goto previous magit section
+- `C-k`	previous visual line
+- `l l`	open log buffer
+- `n`	next search occurrence
+- `N`	previous search occurrence
+- `o`	revert item at point
+- `P u`	push to tracked branch
+- `P m`	push to matching branch (e.g., upstream/develop to origin/develop)
+- `q`	quit
+- `s`	on a file or hunk in a diff: stage the file or hunk
+- `x`	discard changes
+- `+`	on a hunk: increase hunk size
+- `-`	on a hunk: decrease hunk size
+- `S`	stage all
+- `TAB`	on a file: expand/collapse diff
+- `u`	on a staged file: unstage
+- `U`	unstage all staged files
+- `v or V`	select multiple lines
+- `z z`	stash changes
+
+### 3.2 Staging lines
 
 Magit allows you to stage specific lines by selecting them in a diff and hitting s to stage. Due to inconsistencies between Vim and Emacs editing styles, if you enter visual line state with V, you will stage one more line than intended. To work around this, you can use v instead (since Magit only stages whole lines, in any case).
 
-3.3 Commit message editing buffer
+### 3.3 Commit message editing buffer
 
 In a commit message buffer press ~,c~ (if dotspacemacs-major-mode-leader-key is ~,~) or C-c C-c to commit the changes with the entered message. Pressing ~,a~ or C-c C-k will discard the commit message.
 
@@ -174,7 +177,7 @@ h	go left
 j	go down
 k	go up
 l	go right
-3.4 Interactive rebase buffer
+### 3.4 Interactive rebase buffer
 
 Key Binding	Description
 c or p	pick
@@ -190,7 +193,7 @@ s	squash
 u	undo
 y	insert
 !	execute
-3.5 Quick guide for recurring use cases in Magit
+### 3.5 Quick guide for recurring use cases in Magit
 
 Amend a commit:
 l l to open log buffer
@@ -212,13 +215,15 @@ a to add a remote, type the name (i.e. upstream) and the URL
 Pull changes from upstream (the parent repository you have forked) and push:
 F -r C-u F and choose upstream or the name you gave to it
 P P to push the commit to origin
-3.6 Git-Flow
+
+### 3.6 Git-Flow
 
 magit-gitflow provides git-flow commands in its own magit menu.
 
 Key Binding	Description
 %	open magit-gitflow menu
-3.7 Git time machine
+
+### 3.7 Git time machine
 
 git-timemachine allows to quickly browse the commits of the current buffer.
 
