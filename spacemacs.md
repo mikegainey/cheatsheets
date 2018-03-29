@@ -41,6 +41,7 @@
 - `SPC f e h` - help
 - `ALT /` - snippet completion
 - `SPC t s` - syntax checking
+- `SPC t p` - runs the command spacemacs/toggle-smartparens 
 - `SPC e` - syntax checking options
 - `SPC a r` - ranger
 - `SPC a d` - deer
@@ -119,9 +120,9 @@
 - `SPC g t`	launch the git time machine
 - `SPC g U`	unstage current file
 
-Highlight by age of commit or last update time is provided by smeargle.
-Git time machine is provided by git-timemachine.
-Git last commit message per line is provided by git-messenger.
+- Highlight by age of commit or last update time is provided by smeargle.
+- Git time machine is provided by git-timemachine.
+- Git last commit message per line is provided by git-messenger.
 
 ### 3.1 Magit
 
@@ -166,75 +167,77 @@ Here are the often used bindings inside a status buffer:
 
 ### 3.2 Staging lines
 
-Magit allows you to stage specific lines by selecting them in a diff and hitting s to stage. Due to inconsistencies between Vim and Emacs editing styles, if you enter visual line state with V, you will stage one more line than intended. To work around this, you can use v instead (since Magit only stages whole lines, in any case).
+Magit allows you to stage specific lines by selecting them in a diff and hitting `s` to stage. Due to inconsistencies between Vim and Emacs editing styles, if you enter visual line state with `V`, you will stage one more line than intended. To work around this, you can use `v` instead (since Magit only stages whole lines, in any case).
 
 ### 3.3 Commit message editing buffer
 
-In a commit message buffer press ~,c~ (if dotspacemacs-major-mode-leader-key is ~,~) or C-c C-c to commit the changes with the entered message. Pressing ~,a~ or C-c C-k will discard the commit message.
+In a commit message buffer press `~,c~` (if `dotspacemacs-major-mode-leader-key` is `~,~`) or `C-c C-c` to commit the changes with the entered message. Pressing `~,a~` or `C-c C-k` will discard the commit message.
 
 Key Binding	Description
-h	go left
-j	go down
-k	go up
-l	go right
+- `h`	go left
+- `j`	go down
+- `k`	go up
+- `l`	go right
+
 ### 3.4 Interactive rebase buffer
 
 Key Binding	Description
-c or p	pick
-e	edit
-f	fixup
-j	go down
-gj	move line down
-k	go up
-gk	move line up
-d or x	kill line
-r	reword
-s	squash
-u	undo
-y	insert
-!	execute
+- `c or p`	pick
+- `e`	edit
+- `f`	fixup
+- `j`	go down
+- `gj`	move line down
+- `k`	go up
+- `gk`	move line up
+- `d or x`	kill line
+- `r`	reword
+- `s`	squash
+- `u`	undo
+- `y`	insert
+- `!`	execute
+
 ### 3.5 Quick guide for recurring use cases in Magit
 
-Amend a commit:
-l l to open log buffer
-c a on the commit you want to amend
-~,c~ or C-c C-c to submit the changes
-Squash last commit:
-l l to open log buffer
-r e on the second to last commit, it opens the rebase buffer
-j to put point on last commit
-s to squash it
-~,c~ or C-c C-c to continue to the commit message buffer
-~,c~ or C-c C-c again when you have finished to edit the commit message
-Force push a squashed commit:
-in the status buffer you should see the new commit unpushed and the old commit unpulled
-P -f P for force a push (beware usually it is not recommended to rewrite the history of a public repository, but if you are sure that you are the only one to work on a repository it is ok - i.e. in your fork).
-Add upstream remote (the parent repository you have forked):
-M to open the remote popup
-a to add a remote, type the name (i.e. upstream) and the URL
-Pull changes from upstream (the parent repository you have forked) and push:
-F -r C-u F and choose upstream or the name you gave to it
-P P to push the commit to origin
+- Amend a commit:
+  - `l l` to open log buffer
+  - `c a` on the commit you want to amend
+  - `~,c~` or `C-c C-c` to submit the changes
+- Squash last commit:
+  - `l l` to open log buffer
+  - `r e` on the second to last commit, it opens the rebase buffer
+  - `j` to put point on last commit
+  - `s` to squash it
+  - `~,c~` or `C-c C-c` to continue to the commit message buffer
+  - `~,c~` or `C-c C-c` again when you have finished to edit the commit message
+- Force push a squashed commit:
+  - in the status buffer you should see the new commit unpushed and the old commit unpulled
+  - `P -f P` for force a push (beware usually it is not recommended to rewrite the history of a public repository, but if you are sure that you are the only one to work on a repository it is ok - i.e. in your fork).
+- Add upstream remote (the parent repository you have forked):
+  - `M` to open the remote popup
+  - `a` to add a remote, type the name (i.e. upstream) and the URL
+- Pull changes from upstream (the parent repository you have forked) and push:
+  - `F -r C-u F` and choose upstream or the name you gave to it
+  - `P P` to push the commit to origin
 
 ### 3.6 Git-Flow
 
-magit-gitflow provides git-flow commands in its own magit menu.
+`magit-gitflow` provides `git-flow` commands in its own magit menu.
 
 Key Binding	Description
-%	open magit-gitflow menu
+`%`	open `magit-gitflow` menu
 
 ### 3.7 Git time machine
 
-git-timemachine allows to quickly browse the commits of the current buffer.
+`git-timemachine` allows to quickly browse the commits of the current buffer.
 
 Key Binding	Description
-SPC g t	start git timemachine and initiate micro-state
-c	show current commit
-n	show next commit
-N	show previous commit
-p	show previous commit
-q	leave micro-state and git timemachine
-Y	copy current commit hash
+- `SPC g t`	start git timemachine and initiate micro-state
+- `c`	show current commit
+- `n`	show next commit
+- `N`	show previous commit
+- `p`	show previous commit
+- `q`	leave micro-state and git timemachine
+- `Y`	copy current commit hash
 
 
 ## Useful Vim key bindings
