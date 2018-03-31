@@ -8,10 +8,9 @@ logging.disable(logging.CRITICAL)
 ```
 Logging to a file:
 ```python
-...
-logging.basicConfig(filename='logfile.txt',
+logging.basicConfig(filename='binthelist.log', filemode='w',
+                    format='%(message)s',
                     level=logging.DEBUG)
-...
 ```
 
 To show a logfile in real-time:
@@ -21,8 +20,7 @@ tail -f <filename>
 
 ## Logging Levels
 - DEBUG
-_ INFO
+- INFO
 - WARN
 - ERROR
 - CRITICAL
-_

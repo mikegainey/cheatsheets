@@ -41,10 +41,18 @@
 - `SPC f e h` - help
 - `ALT /` - snippet completion
 - `SPC t s` - syntax checking
-- `SPC t p` - runs the command spacemacs/toggle-smartparens 
+- `SPC t p` - runs the command spacemacs/toggle-smartparens
 - `SPC e` - syntax checking options
 - `SPC a r` - ranger
 - `SPC a d` - deer
+
+## anaconda (Code navigation, documentation lookup and completion for Python)
+- https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/python
+- `SPC m g g` spacemacs/jump-to-definition
+- `SPC m g b` anaconda-mode-go-back
+- `SPC m g g`
+- `SPC m g g`
+
 
 ## unimpaired
 
@@ -92,8 +100,8 @@
   - `y` - do the replacement.
   - `n` - skip
   - `!` - do this and all remaining replacements without asking.
-  - `Ctrl+g` - cancel. 
-  
+  - `Ctrl+g` - cancel.
+
 ## Git
 
 - `SPC g b`	open a magit blame
