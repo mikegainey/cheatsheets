@@ -1,9 +1,9 @@
-Haskell has no statements, only expressions!
+### Haskell has no statements, only expressions!
 
 - Pure functional programming languages don’t have any statements — no assignments, no jumps.
 - Instead, all computation is performed by evaluating expressions
 
-Function applications
+### Function applications
 
 - Expressions can contain function calls.
 - A function takes argument(s), performs some computation, and produces result(s).
